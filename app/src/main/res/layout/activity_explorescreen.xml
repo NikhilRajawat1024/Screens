@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".explorescreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0F2723"
+        app:title="Howdy UserName !!"
+        app:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@color/white"
+        app:titleMarginStart="55dp">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/refine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fetching..."
+        android:layout_marginVertical="39dp"
+        android:layout_marginStart="56dp"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigationbar_menu"
+        android:id="@+id/navigation_bar"/>
+
+
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/navigation_bar1"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/toolbar1"
+      app:menu="@menu/menu2"
+      style="@style/BottomNavigationViewStyle"
+      android:backgroundTint="@null"
+      app:itemTextColor="@color/white"
+      android:background="#263C38"/>
+</RelativeLayout>
